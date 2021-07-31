@@ -27,6 +27,8 @@ public class Test implements Database{
         double actual_amount = Test.getInstance().getAmount();
 
         System.out.println("test result > we expected to see " + expected_amount + " but we saw " + actual_amount);
+
+        Test.getInstance().tear_down();
     }
 
     public void tear_down(){
